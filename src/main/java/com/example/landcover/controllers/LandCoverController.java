@@ -54,7 +54,7 @@ public class LandCoverController {
         int [][] arr = new int[5][5];
         for(int i=rowNum - 2;i<rowNum + 2;i++) {
             for(int j=colNum - 2;j<colNum + 2;j++) {
-                arr[i][j] = (int) myArray[i][j];
+                arr[i+2-rowNum][j+2-colNum] = (int) myArray[i][j];
             }
         }
         System.out.println(Arrays.deepToString(arr));
